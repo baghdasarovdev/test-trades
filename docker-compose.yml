@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  next-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      NEXT_PUBLIC_POLYGON_API_KEY: ${NEXT_PUBLIC_POLYGON_API_KEY}
+      NEXT_PUBLIC_BACKEND_API_URL: ${NEXT_PUBLIC_BACKEND_API_URL}
+      NEXT_PUBLIC_POLYGON_API_URL: ${NEXT_PUBLIC_POLYGON_API_URL}
+    volumes:
+      - .:/app
+    command: npm run dev
+    restart: unless-stopped
