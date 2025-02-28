@@ -1,3 +1,16 @@
+## 📦 Installation  
+To set up the project locally, follow these steps:  
+
+```sh
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
+
+
 # 📈 Stock Tracker Application  
 
 A real-time stock tracking application where users can:  
@@ -53,22 +66,6 @@ The application integrates with multiple stock market data providers:
 - **Server-Side Fetching for SEO**: Ensures stock data is indexed correctly for better discoverability.
 
 - **Local Storage for Watchlist**: Provides a fast and offline-capable watchlist experience.
-
-
-
-## 📦 Installation  
-To set up the project locally, follow these steps:  
-
-```sh
-# Navigate to the project directory
-cd stock-tracker
-
-# Install dependencies
-npm install
-
-# Start the development server
-npm run dev
-```
 
   ## Environment Variables
   Create a .env file in the root directory and add the following environment variables:
